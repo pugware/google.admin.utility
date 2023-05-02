@@ -19,7 +19,7 @@ function loadPage() {
         document.querySelector('.categories').innerHTML = `<a style="width: 170px;" href="#${hash.split('/').slice(0, -1).join('/')}" class="category"><img style="width: 100%;" title="Back" alt="Back" src="${icons.Default}"><div class="cheatlabel" style="background-color: #24b6ff;">Back</div></a>`;
         for (const key in parent) createButton(key, parent, hash.split("/")[0]);
     } else {
-        document.querySelector('h1').innerHTML = "Blooket Cheats";
+        document.querySelector('h1').innerHTML = "PugWare";
         for (const key in unobfuscated) createButton(key, unobfuscated, typeof unobfuscated[key] == "string" && "Default");
     }
 }
